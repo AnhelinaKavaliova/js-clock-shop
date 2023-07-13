@@ -51,7 +51,8 @@ const CATALOG = [
     {
         id: 'prod8',
         name: 'BULOVA THE KINGSTON CONTEMPORARY MANTEL CLOCK' ,
-        img: 'https://github.com/AnhelinaKavaliova/js-clock-shop/blob/main/shopApp/img/catalog/Bulova%20the%20kingston.jpg?raw=true'
+        img: 'https://github.com/AnhelinaKavaliova/js-clock-shop/blob/main/shopApp/img/catalog/Bulova%20the%20kingston.jpg?raw=true',
+        price: 234000,
     },
 
     {
