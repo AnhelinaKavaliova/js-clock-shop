@@ -14,8 +14,8 @@ class LocalStorageUtil{
 
     setProducts(id){
         let products = this.getProducts();
-        const index = products.indexOd(id);
-        const pushProduct = false;
+        const index = products.indexOf(id);
+        let pushProduct = false;
 
         if(index === -1){
             products.push(id);
