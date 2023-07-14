@@ -15,6 +15,8 @@ class Products{
             element.classList.remove(this.buttunActiveClass);
             element.innerHTML = this.buttonTextAdd;
         }
+
+        headerPage.render(products.length);
     }
     
     render(){
