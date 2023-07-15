@@ -1,4 +1,9 @@
 class Card{
+    
+    handleClear(){
+        ROOT_CARD.innerHTML = '';
+    }
+
     render(){
 
         const productsStore = localStoragelUtil.getProducts();
@@ -18,12 +23,12 @@ class Card{
         });
         const html = `
         <div class = "card-container">
-            <div class = "card__close" onclick = "">
+            <div class = "card__close" onclick = "cardPage.handleClear();">
             </div>
             <table>
                 ${htmlCatalog}
                 <tr>
-                    <td class = "card-element__name">Sum</td>
+                    <td class = "card-element__name">Sum:</td>
                     <td class = "card-element__price">▶ ${sumCatalog.toLocaleString()} USD</td>
                 </tr>    
              </table>
@@ -37,4 +42,3 @@ class Card{
 }
 
 const cardPage = new Card();
-cardPage.render();
